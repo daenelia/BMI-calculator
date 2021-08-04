@@ -6,7 +6,6 @@ function bmicalc() {
     let lengte = +document.getElementById("lengte").value;
     console.log(lengte);
     let gewicht = +document.getElementById("gewicht").value;
-    console.log(gewicht);
     let gewichtRond = Math.round(gewicht);
     console.log(gewichtRond);
     
@@ -17,10 +16,11 @@ function bmicalc() {
         
     let bmiResultaat = gewichtRond / m2;
     let bmiFull = bmiResultaat.toFixed(1);
-    console.log(bmiFull);
+    console.log("full BMI" + bmiResultaat);
+    console.log("fixed BMI" + bmiFull);
     
     document.getElementById("bmi-nr").innerHTML = "Gebaseerd op jouw lengte en gewicht is jouw BMI " + (bmiFull) + ".";
-    console.log(bmiResultaat);
+
     
     let BadInput = 0;
     if ( lengte < 100 ) {
@@ -44,21 +44,21 @@ function bmicalc() {
         document.getElementById("div3").style.display= "none";
         document.getElementById("div4").style.display= "none";
     }
-    else if(parseInt(bmiFull) > parseInt(29.9)) {
+    else if(bmiFull > 29.9) {
         text = "Een BMI boven de 30 wordt gezien als een indicatie dat je obees kunt zijn.";
         document.getElementById("div1").style.display="inline";
         document.getElementById("div2").style.display= "none";
         document.getElementById("div3").style.display= "none";
         document.getElementById("div4").style.display= "none";
         
-      } else if (parseInt(bmiFull) > parseInt(25.9)){
+      } else if (bmiFull > 25.9){
         text = "Je BMI boven de 26 wordt gezien als een indicatie dat je overgewicht hebt.";
         document.getElementById("div1").style.display="none";
         document.getElementById("div2").style.display= "inline";
         document.getElementById("div3").style.display= "none";
         document.getElementById("div4").style.display= "none";
       } 
-    else if (parseInt(bmiFull) < parseInt(18.5)){
+    else if (bmiFull < 18.5){
         text = "Je BMI onder de 18,5 wordt gezien als een indicatie dat je wellicht ondergewicht hebt.";  
         document.getElementById("div1").style.display="none";
         document.getElementById("div2").style.display= "none";
