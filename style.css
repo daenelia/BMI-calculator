@@ -1,0 +1,128 @@
+* {box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, Tahoma, Verdana, Sans-Serif;
+  background-color: #2b2b2b;
+}
+
+a {
+  color:#007ed7;
+}
+a:hover {
+  color:#049b92;
+}
+.footer a{
+  color:#ffffff;
+  font-weight: bold;
+}
+
+p.bold {
+  font-weight: bold;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Style the input fields and buttons*/
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: #049b92;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7e4ea8;
+}
+
+div #inputs {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+div #instructies {
+  padding: 5px;
+  font-size: smaller;
+  font-style: italic;
+}
+
+
+/* Style the header */
+  .header {
+    background-color: #ffffff;
+    color: #7e4ea8;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    border-top: 5px solid #a7c46a;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    min-height: 550px;
+    background-color: #ffffff;
+    /*height: 300px;  Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #7e4ea8;
+    color: #ccc;
+    font-size: smaller;
+    padding: 10px;
+    text-align: center;
+    border-top: 5px solid #a7c46a;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  #div1 {
+    display: none;
+  }
+
+  #div2{
+    display: none;
+  }
+
+  #div3{
+    display: none;
+  }
+
+  #div4{
+    display: none;
+  }

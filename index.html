@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>BMI berekening - DreSports Amstelveen</title>
+</head>
+<body>
+
+
+  <div class="wrapper">
+    
+    <div class="header">
+      <h2>DreSports Amstelveen </br>Bereken je BMI</h2>
+    </div> 
+   <div class="row">
+      <div class="column" id="inputs">
+        <p id="instructies">BMI (Body Mass Indication) is een middel om vast te stellen hoe fit en gezond je lichaam is. Deze berekening is geschikt voor volwassenen tussen 18 en 70 jaar. Voor kinderen en senioren gelden andere criteria. Voor kinderen en senioren heeft DreSports een speciaal programma.</p>
+        <p>Voer je lengte in (cm):</p>
+        <input type="number" id="lengte" onfocus="inputField(this)">
+        <p>Voer je gewicht in (kg):</p>
+        <input type="number" id="gewicht" onfocus="inputField(this)">
+        <p>Klik de button.</p>
+        <button onclick="bmicalc()">BMI berekening</button>
+        <p id="errorMessage"></p>
+      </div>
+      <div class="column">
+        <p class="bold">Resultaat</p>
+        <p id="bmi-nr"></p>
+        <p id="resultaat"></p>
+        <p id="resultaat2"></p>
+      </div>
+      <div class="column">
+      <p class="bold">Advies</p>
+      <div id ="div1" ><p>Je BMI geeft aan dat het verstandig is om actie te ondernemen. Obesitas verhoogt je kans op diabetes 2, kanker en andere ziektes.</p>
+                       <p>Wanneer je veel overbodig lichaamsgewicht draagt, belast je je lichaam op de verkeerde manier. Door een aanpassing te doen van beweging, sport en voeding, kun je de kwaliteit van je leven verhogen.</p>
+                       <p>Met professionele begeleiding heb je een stok achter de deur en toegang tot de specifieke kennis van een personal trainer met veel ervaring op het gebied van gewichtsverlies. </p>
+                      <p>Neem daarom nu <a href="http://www.dresports.nl/contact.html">contact</a> op voor een vrijblijvende kennismaking en intake bij DreSports.</p></div>
+      <div id ="div2" ><p>Je BMI geeft aan dat het verstandig is om actie te ondernemen. Overgewicht kan de kwaliteit van je gezondheid en je leven sterk beinvloeden.</p>
+        <p>Wanneer je overbodig lichaamsgewicht draagt, belast je je lichaam op de verkeerde manier. Door een aanpassing te doen van beweging, sport en voeding, kun je de kwaliteit van je leven verhogen.</p>
+        <p>Met professionele begeleiding heb je een stok achter de deur en toegang tot de specifieke kennis van een personal trainer met veel ervaring op het gebied van gewichtsverlies. </p>
+       <p>Neem daarom nu <a href="http://www.dresports.nl/contact.html">contact</a> op voor een vrijblijvende kennismaking en intake bij DreSports.</div>
+      <div id ="div3"><p>Je BMI geeft aan dat het verstandig is om actie te ondernemen. Bij ondergewicht kunnen lichamelijke klachten naar voren komen, zoals lusteloosheid en energietekort.</p>
+                      <p>Het lijkt eenvoudig om bij ondergewicht te denken dat een hapje meer eten de oplossing is. Maar ook bij ondergewicht is bewegen belangrijk voor de spieropbouw van je lichaam.</p>
+                      <p>Met professionele begeleiding kan een programma worden gestart waarbij jouw doelen behaald kunnen worden.</p>
+                      <p>Neem daarom nu <a href="http://www.dresports.nl/contact.html">contact</a> op voor een vrijblijvende kennismaking en intake bij DreSports.</p></div>
+      <div id ="div4"><p>Je BMI wordt gezien als gezond voor jouw lengte. Toch kan het verstandig zijn om eens te kijken naar je beweeg- en eetpatroon. Zijn er nog punten waar je je op wilt verbeteren?</p>
+                      <p>Door spieropbouw te stimuleren met gerichte oefeningen en goede voeding kun je je nog beter gaan voelen en doelen behalen die je misschien als onhaalbaar achtte. Wil je sterker worden, een keer een marathon lopen voor je bucketlist of denk je dat sixpacks altijd ge-photoshopped worden?</p>
+                      <p>Neem daarom toch <a href="http://www.dresports.nl/contact.html">contact</a> op voor een vrijblijvende kennismaking en intake bij DreSports.</p></div>
+      
+      </div>
+
+    </div> 
+    
+    <div class="footer">
+      <p><a href="http://www.dresports.nl/contact.html">DreSports Contact formulier</a></p>
+      <p>BMI berekening tool door Daenelia Designs</p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
